@@ -1,0 +1,766 @@
+{
+  "contatos": [
+    {
+      "key": "chen",
+      "nome": "Chen",
+      "linha": "Camisa de Time",
+      "resumo": "Catálogo geral, de conjuntos e de calças. Pedido por print.",
+      "tabela_unica": true,
+      "tabela_texto": "Os três catálogos numa tabela só. Adicionais, frete e pagamento vêm na próxima etapa.",
+      "catalogos": [
+        {
+          "titulo": "Geral",
+          "aba": "Geral",
+          "botao": "ABRIR CATÁLOGO GERAL",
+          "descricao": "Camisa, short e meia. Na página de pedido estão os adicionais e o frete.",
+          "link": "https://chen13690323804.x.yupoo.com/",
+          "itens": [
+            [
+              "Camisa torcedor",
+              "US$ 9"
+            ],
+            [
+              "Camisa torcedor manga longa",
+              "US$ 13"
+            ],
+            [
+              "Camisa player",
+              "US$ 14"
+            ],
+            [
+              "Camisa retrô",
+              "US$ 15"
+            ],
+            [
+              "Short",
+              "US$ 8"
+            ],
+            [
+              "Short player",
+              "US$ 10"
+            ],
+            [
+              "Meia",
+              "US$ 4"
+            ]
+          ]
+        },
+        {
+          "titulo": "Conjuntos (suit)",
+          "aba": "Conjuntos",
+          "botao": "ABRIR CATÁLOGO DE CONJUNTOS",
+          "descricao": "Agasalho e corta-vento. Pede junto com o catálogo geral.",
+          "link": "http://huang456852.x.yupoo.com/albums?_wv=1",
+          "itens": [
+            [
+              "Corta-vento",
+              "US$ 28"
+            ],
+            [
+              "Kit agasalho",
+              "US$ 42"
+            ],
+            [
+              "Conjunto de treino",
+              "US$ 35"
+            ]
+          ]
+        },
+        {
+          "titulo": "Calças (pants)",
+          "aba": "Calças",
+          "botao": "ABRIR CATÁLOGO DE CALÇAS",
+          "descricao": "Calças de treino e de passeio. Pede junto com o catálogo geral.",
+          "link": "https://ty-guoji2.x.yupoo.com/",
+          "itens": [
+            [
+              "Calça de treino",
+              "US$ 18"
+            ],
+            [
+              "Calça jogger",
+              "US$ 20"
+            ],
+            [
+              "Calça de moletom",
+              "US$ 22"
+            ]
+          ]
+        }
+      ],
+      "pedido_titulo": "POR PRINT",
+      "pedido_intro": "O que soma no valor do pedido e como pagar. O link vem dele, depois da confirmação. O frete da tabela vale para camisa. Conjunto e calça: pergunte o frete na conversa.",
+      "medidas_intro": "Na mensagem, escreva o código da esquerda. P vira S, G vira L, XG vira XL, 2XG vira XXL e 3XL vira XXXL. 4XL continua 4XL. Comprimento e largura são da camisa, em cm. Altura é da pessoa, em cm. Peso é em kg. No limite entre dois, pegue o maior. Player usa a tabela justa.",
+      "medidas": [
+        [
+          [
+            "TORCEDOR",
+            "Versão larga.",
+            [
+              "ESCREVA",
+              "COMP.",
+              "LARG.",
+              "ALTURA",
+              "PESO"
+            ],
+            [
+              [
+                "S · P",
+                "69–71",
+                "53–55",
+                "162–170",
+                "50–62"
+              ],
+              [
+                "M · M",
+                "71–73",
+                "55–57",
+                "170–176",
+                "62–78"
+              ],
+              [
+                "L · G",
+                "73–75",
+                "57–58",
+                "176–182",
+                "78–83"
+              ],
+              [
+                "XL · XG",
+                "75–78",
+                "58–60",
+                "182–190",
+                "83–90"
+              ],
+              [
+                "XXL · 2XG",
+                "78–81",
+                "60–62",
+                "190–195",
+                "90–97"
+              ],
+              [
+                "XXXL · 3XL",
+                "81–83",
+                "62–64",
+                "192–197",
+                "97–104"
+              ],
+              [
+                "4XL",
+                "83–85",
+                "64–65",
+                "197–200",
+                "104–110"
+              ]
+            ]
+          ],
+          [
+            "JOGADOR",
+            "Versão justa. A camisa já é mais curta.",
+            [
+              "ESCREVA",
+              "COMP.",
+              "LARG.",
+              "ALTURA",
+              "PESO"
+            ],
+            [
+              [
+                "S · P",
+                "67–69",
+                "49–51",
+                "162–170",
+                "50–62"
+              ],
+              [
+                "M · M",
+                "69–71",
+                "51–53",
+                "170–175",
+                "62–75"
+              ],
+              [
+                "L · G",
+                "71–73",
+                "53–55",
+                "175–180",
+                "75–80"
+              ],
+              [
+                "XL · XG",
+                "73–76",
+                "55–57",
+                "180–185",
+                "80–85"
+              ],
+              [
+                "XXL · 2XG",
+                "76–78",
+                "57–60",
+                "185–190",
+                "85–90"
+              ],
+              [
+                "XXXL · 3XL",
+                "78–79",
+                "60–63",
+                "190–195",
+                "90–95"
+              ]
+            ]
+          ]
+        ],
+        [
+          [
+            "FEMININA",
+            "Sem peso nesta tabela.",
+            [
+              "ESCREVA",
+              "COMP.",
+              "LARG.",
+              "ALTURA"
+            ],
+            [
+              [
+                "S · P",
+                "61–63",
+                "40–41",
+                "150–160"
+              ],
+              [
+                "M · M",
+                "63–66",
+                "41–44",
+                "160–165"
+              ],
+              [
+                "L · G",
+                "66–69",
+                "44–47",
+                "165–170"
+              ],
+              [
+                "XL · XG",
+                "69–71",
+                "47–50",
+                "170–175"
+              ]
+            ]
+          ],
+          [
+            "INFANTIL",
+            "Escreva o número, não a letra. Idade em anos. Cintura e altura em cm.",
+            [
+              "Nº",
+              "IDADE",
+              "COMP.",
+              "LARG.",
+              "CINT.",
+              "ALTURA"
+            ],
+            [
+              [
+                "16",
+                "3–4",
+                "44–47",
+                "35–37",
+                "20–37",
+                "95–105"
+              ],
+              [
+                "18",
+                "4–5",
+                "47–50",
+                "37–39",
+                "21–39",
+                "105–115"
+              ],
+              [
+                "20",
+                "5–6",
+                "50–53",
+                "39–41",
+                "22–41",
+                "115–125"
+              ],
+              [
+                "22",
+                "6–7",
+                "53–56",
+                "41–43",
+                "23–42",
+                "125–135"
+              ],
+              [
+                "24",
+                "8–9",
+                "56–59",
+                "43–45",
+                "24–44",
+                "135–145"
+              ],
+              [
+                "26",
+                "10–11",
+                "59–62",
+                "45–47",
+                "25–47",
+                "145–155"
+              ],
+              [
+                "28",
+                "12–13",
+                "62–65",
+                "47–49",
+                "26–50",
+                "155–165"
+              ]
+            ]
+          ]
+        ]
+      ],
+      "passos": [
+        {
+          "titulo": "Ache e tire print",
+          "texto": "Um print por produto. A imagem tem que aparecer inteira.",
+          "acao": "catalogos",
+          "lista": [
+            "Abra o catálogo",
+            "Busque o produto",
+            "Tire o print da imagem",
+            "Vários produtos: um print de cada"
+          ],
+          "print": "prints/chen-1.png"
+        },
+        {
+          "titulo": "Pergunte se tem",
+          "texto": "Mande o print com a mensagem abaixo. Espere a resposta antes de montar o pedido.",
+          "acao": "whatsapp",
+          "exemplo": [
+            "PERGUNTAR SE TEM",
+            "Copie e cole junto com o print:",
+            "Olá, tudo bem?\nTem este produto abaixo?"
+          ],
+          "notas": [
+            [
+              "IMPORTANTE",
+              "Ele é chinês e traduz tudo no Google. Nada de abreviação ou palavra com duplo sentido. Seja rápido e direto."
+            ]
+          ],
+          "print": "prints/chen-2.png"
+        },
+        {
+          "titulo": "Mande o pedido",
+          "texto": "Com todos os produtos confirmados, mande a mensagem neste padrão. Casaco e o resto: só o print.",
+          "mensagens": true,
+          "modelos": [
+            [
+              "SEM PERSONALIZAÇÃO",
+              [
+                "O print",
+                "Tipo de camisa: torcedor ou player",
+                "Os tamanhos"
+              ]
+            ],
+            [
+              "COM PERSONALIZAÇÃO",
+              [
+                "O print",
+                "Tipo de camisa, se precisar",
+                "Os patrocínios",
+                "Os tamanhos",
+                "O número"
+              ]
+            ]
+          ],
+          "notas": [
+            [
+              "TAMANHOS",
+              "Escreva o código da tabela de tamanhos. Torcedor: versão larga. Player: versão justa. No limite entre dois, pegue o maior. Infantil: o número, de 16 a 28."
+            ],
+            [
+              "PATROCÍNIO",
+              "Se o print tem patrocínio e você não quer, risque os patrocínios na imagem e escreva: SEM OS PATROCÍNIOS."
+            ]
+          ],
+          "print": "prints/chen-3.png"
+        },
+        {
+          "titulo": "Envio e pagamento",
+          "texto": "Só pague depois que ele confirmar. O link de pagamento vem dele, na mesma conversa.",
+          "lista": [
+            "Ele pede os dados de envio",
+            "Você responde no formato abaixo",
+            "Paga pelo link e guarda o comprovante",
+            "Quando o rastreio aparecer, vincula o CPF no Portal do Importador"
+          ],
+          "exemplo": [
+            "DADOS DE ENVIO",
+            "Quando ele pedir, copie e preencha depois do igual:",
+            "to this address pls\nname=\nStreet=\nCountry=\ncity=\nstate=\nzip code=\nphone=\nCPF="
+          ],
+          "print": "prints/chen-4.png"
+        }
+      ],
+      "adicionais": [
+        [
+          "Personalização",
+          "+ US$ 3"
+        ],
+        [
+          "Tamanho XXL",
+          "+ US$ 1"
+        ],
+        [
+          "Tamanho XXXL",
+          "+ US$ 2"
+        ],
+        [
+          "Patch",
+          "+ US$ 1"
+        ]
+      ],
+      "frete": [
+        [
+          "1 camisa",
+          "+ US$ 5"
+        ],
+        [
+          "2 camisas",
+          "+ US$ 4"
+        ],
+        [
+          "3 camisas",
+          "+ US$ 2"
+        ],
+        [
+          "4 camisas ou mais",
+          "Frete grátis"
+        ]
+      ],
+      "pagamento": "XTransfer",
+      "whatsapp": "+86 136 9032 3804",
+      "video": "https://www.youtube.com/watch?v=pedido-camisa",
+      "mensagens": [
+        [
+          "PERGUNTAR SE TEM",
+          "Mande o print e esta mensagem:",
+          "Olá, tudo bem?\nTem este produto abaixo?"
+        ],
+        [
+          "SEM PERSONALIZAÇÃO",
+          "Depois da confirmação, mande o print e preencha:",
+          "Camisa torcedor\nTamanho L"
+        ],
+        [
+          "COM PERSONALIZAÇÃO",
+          "Se quiser número ou patrocínio. Player: um tamanho a mais.",
+          "Camisa player\nTamanho XL\nNúmero 10\nPatrocínio: [nome do patrocínio]"
+        ],
+        [
+          "SEM OS PATROCÍNIOS",
+          "Se o print tem patrocínio e você não quer, risque na foto e mande:",
+          "Camisa player\nSEM OS PATROCÍNIOS\nTamanho XL\nNúmero 10"
+        ],
+        [
+          "DADOS DE ENVIO",
+          "Quando ele pedir, copie e preencha depois do igual:",
+          "to this address pls\nname=\nStreet=\nCountry=\ncity=\nstate=\nzip code=\nphone=\nCPF="
+        ]
+      ],
+      "checklist": [
+        "Abri o catálogo e tirei print de cada peça",
+        "Perguntei se tem e esperei a confirmação",
+        "Se for camisa, marquei torcedor ou player. Casaco e o resto: só o print",
+        "Se for camisa, escrevi o tamanho da tabela. Infantil: o número, de 16 a 28",
+        "Se não quiser patrocínio: risquei e escrevi SEM OS PATROCÍNIOS",
+        "Se for personalizado: mandei patrocínios e número",
+        "Enviei o endereço com name, Street, Country, city, state, zip code, phone e CPF",
+        "Paguei pelo link, guardei o comprovante e vinculei o CPF no Portal"
+      ]
+    },
+    {
+      "key": "cris",
+      "nome": "Cris",
+      "linha": "X Super Factory",
+      "resumo": "Vários catálogos. Cada um pede separado.",
+      "so_links": true,
+      "links_texto": "Sem tabela de preço. Cada catálogo é um pedido separado. O valor você confirma com o contato.",
+      "catalogos": [
+        {
+          "titulo": "Tudo",
+          "descricao": "Catálogo completo.",
+          "link": "https://xingtu521.x.yupoo.com/categories/"
+        },
+        {
+          "titulo": "Tênis Adidas",
+          "descricao": "Catálogo de tênis Adidas.",
+          "link": "https://xingtu521.x.yupoo.com/categories/5010674"
+        },
+        {
+          "titulo": "Tênis Nike",
+          "descricao": "Catálogo de tênis Nike.",
+          "link": "https://xingtu521.x.yupoo.com/categories/5010658"
+        },
+        {
+          "titulo": "Tênis Air Jordan",
+          "descricao": "Catálogo de tênis Air Jordan.",
+          "link": "https://xingtu521.x.yupoo.com/categories/4972194"
+        },
+        {
+          "titulo": "Tênis Corrida",
+          "descricao": "Catálogo de tênis de corrida.",
+          "link": "https://xingtu521.x.yupoo.com/categories/5010657"
+        },
+        {
+          "titulo": "Tênis Hoka",
+          "descricao": "Catálogo de tênis Hoka.",
+          "link": "https://xingtu521.x.yupoo.com/categories/5010664"
+        },
+        {
+          "titulo": "Tênis New Balance",
+          "descricao": "Catálogo de tênis New Balance.",
+          "link": "https://xingtu521.x.yupoo.com/categories/5010659"
+        },
+        {
+          "titulo": "Tênis Asics",
+          "descricao": "Catálogo de tênis Asics.",
+          "link": "https://xingtu521.x.yupoo.com/categories/5010670"
+        },
+        {
+          "titulo": "Tênis Puma",
+          "descricao": "Catálogo de tênis Puma.",
+          "link": "https://xingtu521.x.yupoo.com/categories/5010656"
+        },
+        {
+          "titulo": "Tênis Mizuno",
+          "descricao": "Catálogo de tênis Mizuno.",
+          "link": "https://xingtu521.x.yupoo.com/categories/5010660"
+        },
+        {
+          "titulo": "Tênis Brooks",
+          "descricao": "Catálogo de tênis Brooks.",
+          "link": "https://xingtu521.x.yupoo.com/categories/5010667"
+        },
+        {
+          "titulo": "Óculos de sol",
+          "descricao": "Catálogo de óculos de sol.",
+          "link": "https://shangmei168.x.yupoo.com/albums"
+        },
+        {
+          "titulo": "Bolsas",
+          "descricao": "Catálogo de bolsas.",
+          "link": "https://legent.x.yupoo.com/categories/"
+        }
+      ],
+      "pedido_titulo": "EM SEPARADO",
+      "pedido_intro": "O que soma no valor do pedido e como pagar. Cada catálogo sai num pedido separado.",
+      "passos": [
+        {
+          "titulo": "Escolhe o catálogo",
+          "texto": "Abra só o catálogo da peça. Catálogos diferentes não vão na mesma mensagem.",
+          "acao": "catalogos",
+          "lista": [
+            "Ache o catálogo na lista",
+            "Abra só esse",
+            "Tire um print da imagem inteira"
+          ],
+          "print": "prints/cris-1.png"
+        },
+        {
+          "titulo": "Escreve a mensagem",
+          "texto": "A primeira linha é o nome do catálogo. Embaixo, o modelo e a quantidade. No tênis, a numeração europeia (EU).",
+          "acao": "whatsapp",
+          "mensagens": true,
+          "exemplo": [
+            "PEDIDO",
+            "Troque o nome do catálogo. Se não for tênis, apague a linha da numeração.",
+            "[nome do catálogo]\nModelo da foto\nQuantidade: 1\nNumeração: 42 EU"
+          ],
+          "print": "prints/cris-2.png"
+        },
+        {
+          "titulo": "Espera a confirmação",
+          "texto": "Ele confere o estoque e responde. Sem essa resposta, não pague.",
+          "lista": [
+            "Se não tiver, o pedido para aqui",
+            "Se tiver, confira o preço que ele passou",
+            "Só então siga para o pagamento"
+          ],
+          "print": "prints/cris-3.png"
+        },
+        {
+          "titulo": "Pagamento",
+          "texto": "O prazo de envio começa depois que o pagamento é confirmado.",
+          "lista": [
+            "Pague pelo método da etapa Frete e pagamento",
+            "Guarde o comprovante",
+            "Quando o rastreio aparecer, vincule o CPF no Portal do Importador"
+          ],
+          "exemplo": [
+            "DADOS DE ENVIO",
+            "Quando ele pedir, copie e preencha depois dos dois pontos:",
+            "Nome:\nEndereço:\nCidade:\nEstado:\nPaís:\nCEP:\nTelefone:\nCPF:\nE-mail:"
+          ],
+          "print": "prints/cris-4.png"
+        }
+      ],
+      "adicionais": [
+        [
+          "Embalagem para presente",
+          "+ US$ 3"
+        ]
+      ],
+      "frete": [
+        [
+          "1 item",
+          "+ US$ 12"
+        ],
+        [
+          "2 itens",
+          "+ US$ 8"
+        ],
+        [
+          "3 itens ou mais",
+          "Grátis"
+        ]
+      ],
+      "pagamento": "Transferência ou carteira digital",
+      "whatsapp": "+86 156 0501 5136",
+      "video": "https://www.youtube.com/watch?v=pedido-tenis-luxo",
+      "mensagens": [
+        [
+          "PEDIDO",
+          "A primeira linha é o nome do catálogo. Se não for tênis, apague a numeração.",
+          "[nome do catálogo]\nModelo da foto\nQuantidade: 1\nNumeração: 42 EU"
+        ],
+        [
+          "DADOS DE ENVIO",
+          "Quando ele pedir, copie e preencha depois dos dois pontos:",
+          "Nome:\nEndereço:\nCidade:\nEstado:\nPaís:\nCEP:\nTelefone:\nCPF:\nE-mail:"
+        ]
+      ],
+      "checklist": [
+        "Escolhi um catálogo só, na lista",
+        "Mandei uma mensagem só para aquele catálogo",
+        "A primeira linha é o nome do catálogo. Anotei o modelo e a quantidade",
+        "Se for tênis: confirmei a numeração europeia (EU)",
+        "Esperei a confirmação do estoque antes de pagar",
+        "Enviei nome, endereço, cidade, estado, país, CEP, telefone, CPF e e-mail",
+        "Paguei e guardei o comprovante",
+        "Quando o rastreio aparecer: vinculei o CPF no Portal do Importador"
+      ]
+    }
+  ],
+  "textos": {
+    "capa_edicao": "ARQUIVO 01 · USO INTERNO",
+    "capa_carimbo": "CONFIDENCIAL",
+    "capa_titulo": [
+      "ACESSO"
+    ],
+    "capa_destaque": "RESTRITO",
+    "capa_texto": "Os contatos que a gente usa pra comprar. Não estão em site nem em post. Ficam só aqui.",
+    "capa_categorias": [
+      "CAMISA DE TIME",
+      "TÊNIS",
+      "ÓCULOS E BOLSAS"
+    ],
+    "capa_info": [
+      [
+        "ARQUIVO",
+        "Contatos e catálogos"
+      ],
+      [
+        "ACESSO",
+        "Só quem recebeu"
+      ],
+      [
+        "REGRA",
+        "Não encaminhar"
+      ]
+    ],
+    "sumario_texto": "Leia o Antes de comprar uma vez. Depois, em cada contato: catálogo, frete, passo a passo e a checklist na hora do pedido.",
+    "antes": [
+      [
+        "PRAZO",
+        "A entrega leva de 20 a 40 dias depois do envio. O código de rastreio vem do fornecedor, na mesma conversa."
+      ],
+      [
+        "TAXA DE IMPORTAÇÃO",
+        "Compra internacional pode ser taxada pela Receita Federal. Se for, a cobrança chega pelos Correios e é paga por quem recebe. Na próxima página: como pagar menos."
+      ],
+      [
+        "PAGAMENTO EM DÓLAR",
+        "Os preços estão em dólar. Cada contato aceita um método, que está na etapa Frete e pagamento. A conversão para real acontece na hora de pagar."
+      ],
+      [
+        "SE DER PROBLEMA",
+        "Guarde o comprovante e os prints da conversa. Se vier errado ou não chegar, fale com o fornecedor na mesma conversa, mostrando o print do pedido."
+      ]
+    ],
+    "imposto": {
+      "link": "https://apps.correios.com.br/portalimportador/",
+      "intro": "Quando a encomenda chega no Brasil, vincule seu CPF a ela no Portal do Importador dos Correios. Assim a taxa sai com o valor certo, sem cobrança a mais.",
+      "passos": [
+        [
+          "AGUARDE",
+          "o nome do objeto postado aparecer no rastreio, no aplicativo dos Correios."
+        ],
+        [
+          "ACESSE",
+          "o Portal do Importador, no site dos Correios. O botão abaixo abre o portal."
+        ],
+        [
+          "DIGITE",
+          "o código de rastreio na barra de pesquisa e encontre a sua encomenda."
+        ],
+        [
+          "PREENCHA",
+          "o campo Identificação do Importador com o seu CPF."
+        ],
+        [
+          "AGUARDE A ATUALIZAÇÃO",
+          "da página. Quando aparecer Documento vinculado, está feito."
+        ]
+      ],
+      "fim": "Agora é só acompanhar o rastreio e esperar a taxa, com o valor certo.",
+      "regra": "O cadastro no site dos Correios tem que estar no mesmo nome de quem vai receber a encomenda.",
+      "exemplo": "Se o pacote está no nome da Raimunda, o login usado no Portal do Importador também tem que ser da Raimunda.",
+      "riscos": [
+        [
+          "BARRADO",
+          "Se alguém entra na conta do José e vincula uma encomenda da Raimunda, ou de qualquer outra pessoa, o pacote pode ser barrado por divergência de informações."
+        ],
+        [
+          "PERDIDO",
+          "Se isso acontecer, a encomenda pode ser perdida, sem reembolso e sem reenvio, mesmo com seguro."
+        ]
+      ],
+      "dica": "Cada pessoa faz no próprio login, com o próprio CPF. Nunca use o login ou o CPF de outra pessoa."
+    },
+    "tamanhos": [
+      [
+        "P",
+        "S"
+      ],
+      [
+        "M",
+        "M"
+      ],
+      [
+        "G",
+        "L"
+      ],
+      [
+        "GG",
+        "XL"
+      ],
+      [
+        "XGG",
+        "XXL"
+      ]
+    ],
+    "tamanhos_texto": "Nas mensagens, use sempre o tamanho internacional. As medidas em cm da camisa estão no contato da camisa. No tênis, a numeração europeia (EU), que costuma ser um número acima da brasileira."
+  }
+}

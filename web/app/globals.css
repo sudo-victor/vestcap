@@ -1,0 +1,1938 @@
+:root {
+  color: #10280a;
+  background: #fbf6e4;
+  font-family: "Avenir Next", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fbf6e4;
+  color: #10280a;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Futura, "Avenir Next Condensed", "Arial Narrow", sans-serif;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  line-height: 1.55;
+}
+
+a {
+  color: #145c38;
+  text-decoration: none;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+/* ---------------- PORTA DE ENTRADA ---------------- */
+
+.palco {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow: hidden;
+  color: #fbf6e4;
+  background: #10280a;
+  display: flex;
+  flex-direction: column;
+}
+
+.palco-seda,
+.palco-velo,
+.palco-grade {
+  position: absolute;
+  inset: 0;
+}
+
+.palco-seda {
+  background: radial-gradient(circle at 50% 0%, #145c38 0%, #10280a 72%);
+}
+
+.palco-velo {
+  background:
+    radial-gradient(circle at 20% 15%, rgba(220, 255, 0, 0.14), transparent 45%),
+    linear-gradient(180deg, rgba(16, 40, 10, 0.48) 0%, rgba(16, 40, 10, 0.88) 70%, #10280a 100%);
+}
+
+.palco-grade {
+  background-image:
+    linear-gradient(rgba(220, 255, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(220, 255, 0, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(circle at 50% 35%, #000 20%, transparent 80%);
+  pointer-events: none;
+}
+
+.palco-conteudo {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 34rem;
+  min-height: 100dvh;
+  margin: 0 auto;
+  padding: 1.5rem 1.35rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.palco-topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid rgba(220, 255, 0, 0.22);
+}
+
+.palco-marca {
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  font-size: 0.95rem;
+  color: #dcff00;
+}
+
+.palco-edicao {
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #d5e8c4;
+  font-weight: 600;
+}
+
+.palco-miolo {
+  display: grid;
+  gap: 1.15rem;
+  margin: auto 0;
+}
+
+.palco-carimbo-linha {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #145c38;
+}
+
+.palco .kicker,
+.kicker-lima {
+  color: #dcff00;
+}
+
+.carimbo {
+  display: inline-block;
+  padding: 0.28rem 0.65rem;
+  border: 2px solid #dcff00;
+  outline: 1px solid rgba(220, 255, 0, 0.45);
+  outline-offset: -5px;
+  color: #dcff00;
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-weight: 800;
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  transform: rotate(-4deg);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+.palco-titulo {
+  display: grid;
+  gap: 0.15rem;
+  line-height: 0.94;
+}
+
+.palco-palavra {
+  font-size: clamp(2.8rem, 11vw, 4.3rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: #fbf6e4;
+  text-transform: uppercase;
+}
+
+.palco-destaque {
+  display: inline-block;
+  width: fit-content;
+  background: #dcff00;
+  color: #10280a;
+  font-size: clamp(2.8rem, 11vw, 4.3rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  padding: 0.06em 0.24em 0.1em 0.14em;
+  margin-left: -0.14em;
+  text-transform: uppercase;
+  box-shadow: 0 14px 36px rgba(220, 255, 0, 0.22);
+}
+
+.palco-submarca {
+  margin-top: 0.45rem;
+  font-size: 1.35rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.palco-lead {
+  color: #e6f0dc;
+  font-size: 1rem;
+  max-width: 28rem;
+}
+
+.palco-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  color: #d5e8c4;
+}
+
+.palco-tags i {
+  width: 5px;
+  height: 5px;
+  background: #dcff00;
+  display: inline-block;
+}
+
+.palco-cofre {
+  margin-top: 0.35rem;
+  padding: 1.35rem;
+  border-radius: 6px;
+  background: rgba(26, 58, 18, 0.78);
+  border: 1px solid rgba(220, 255, 0, 0.28);
+  box-shadow:
+    0 24px 56px rgba(0, 0, 0, 0.48),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  display: grid;
+  gap: 0.9rem;
+}
+
+.cofre-chamada {
+  font-size: 0.9rem;
+  color: #d5e8c4;
+}
+
+.cofre-form {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0;
+}
+
+.cofre-form label {
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+  color: #dcff00;
+}
+
+input {
+  width: 100%;
+  border: 1.5px solid rgba(220, 255, 0, 0.45);
+  border-radius: 4px;
+  padding: 0.95rem 1.05rem;
+  background: rgba(16, 40, 10, 0.85);
+  color: #fbf6e4;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+input::placeholder {
+  color: rgba(213, 232, 196, 0.5);
+}
+
+input:focus {
+  border-color: #dcff00;
+  box-shadow: 0 0 0 3px rgba(220, 255, 0, 0.2);
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  padding: 0.95rem 1.2rem;
+  background: #dcff00;
+  color: #10280a;
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  font-size: 0.92rem;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(220, 255, 0, 0.28);
+}
+
+.erro {
+  padding: 0.65rem 0.85rem;
+  border-radius: 4px;
+  background: rgba(229, 72, 77, 0.18);
+  border: 1px solid rgba(229, 72, 77, 0.55);
+  color: #ffd2d4;
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.palco-rodape {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(220, 255, 0, 0.22);
+}
+
+.palco-rodape span {
+  display: block;
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  color: #dcff00;
+}
+
+.palco-rodape strong {
+  display: block;
+  margin-top: 0.18rem;
+  font-size: 0.78rem;
+  color: #fbf6e4;
+  font-weight: 600;
+}
+
+/* ---------------- GUIA AUTENTICADO (LAYOUT GOOGLE DOCS SIDEBAR) ---------------- */
+
+.docs-layout {
+  min-height: 100vh;
+  background: #f2ece0;
+  color: #10280a;
+}
+
+.docs-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  height: 3.6rem;
+  padding: 0 1.25rem;
+  background: #10280a;
+  color: #fbf6e4;
+  border-bottom: 2px solid #dcff00;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.docs-topbar-esq {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-width: 0;
+}
+
+.docs-menu-toggle {
+  display: none;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  background: rgba(220, 255, 0, 0.14);
+  border: 1px solid rgba(220, 255, 0, 0.4);
+  color: #dcff00;
+  font-size: 0.78rem;
+  box-shadow: none;
+}
+
+.guia-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 2px;
+  background: #dcff00;
+  box-shadow: 0 0 10px #dcff00;
+  flex-shrink: 0;
+}
+
+.guia-brand {
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  color: #dcff00;
+  font-size: 0.95rem;
+}
+
+.guia-sep {
+  color: rgba(213, 232, 196, 0.35);
+}
+
+.docs-doc-title {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #fbf6e4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.docs-topbar-dir {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.docs-whats-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.38rem 0.75rem;
+  border-radius: 4px;
+  background: rgba(220, 255, 0, 0.14);
+  border: 1px solid rgba(220, 255, 0, 0.38);
+  color: #dcff00;
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.docs-whats-chip:hover {
+  background: #dcff00;
+  color: #10280a;
+}
+
+.docs-whats-chip i {
+  font-style: normal;
+}
+
+.carimbo-top {
+  transform: none;
+  font-size: 0.62rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.docs-corpo {
+  max-width: 86rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 17.5rem minmax(0, 1fr);
+  align-items: start;
+}
+
+/* Sidebar estilo Google Docs Outline */
+
+.docs-sidebar {
+  position: sticky;
+  top: 3.6rem;
+  height: calc(100vh - 3.6rem);
+  overflow-y: auto;
+  padding: 1.4rem 0.9rem 2rem 1.15rem;
+  border-right: 1px solid #d9d2be;
+  background: #ebe4d3;
+}
+
+.docs-sidebar-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+  gap: 1.5rem;
+}
+
+.docs-sidebar-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem 0.55rem;
+  border-bottom: 1px solid #d5ceba;
+}
+
+.docs-sidebar-head span {
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: #3e6a52;
+}
+
+.docs-fechar-mobile {
+  display: none;
+  padding: 0.25rem 0.55rem;
+  border-radius: 4px;
+  background: #10280a;
+  color: #dcff00;
+  font-size: 0.74rem;
+  box-shadow: none;
+}
+
+.mobile-quickbar {
+  display: none;
+}
+
+.docs-backdrop {
+  display: none;
+}
+
+.docs-outline {
+  display: grid;
+  gap: 0.12rem;
+}
+
+.docs-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.42rem 0.65rem;
+  border-radius: 4px;
+  color: #26441e;
+  font-size: 0.84rem;
+  line-height: 1.3;
+  transition: background 0.12s ease, color 0.12s ease;
+}
+
+.docs-link:hover {
+  background: rgba(20, 92, 56, 0.08);
+  color: #10280a;
+}
+
+.docs-nivel-1 {
+  font-weight: 800;
+  color: #10280a;
+  margin-top: 0.45rem;
+}
+
+.docs-nivel-1:first-child {
+  margin-top: 0;
+}
+
+.docs-nivel-2 {
+  padding-left: 1.45rem;
+  font-size: 0.8rem;
+  color: #3e6a52;
+  font-weight: 500;
+}
+
+.docs-link-barra {
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  bottom: 0.25rem;
+  width: 3px;
+  border-radius: 1px;
+  background: transparent;
+}
+
+.docs-link-ativo {
+  background: #10280a;
+  color: #dcff00 !important;
+  font-weight: 700;
+}
+
+.docs-link-ativo:hover {
+  background: #10280a;
+  color: #dcff00;
+}
+
+.docs-link-ativo .docs-link-barra {
+  background: #dcff00;
+}
+
+.docs-sidebar-foot {
+  display: grid;
+  gap: 0.45rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid #d5ceba;
+}
+
+.docs-sidebar-foot > span {
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: #3e6a52;
+  padding: 0 0.35rem;
+}
+
+.docs-sidebar-wa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.55rem 0.7rem;
+  border-radius: 4px;
+  background: #10280a;
+  color: #fbf6e4;
+}
+
+.docs-sidebar-wa strong {
+  display: block;
+  font-size: 0.82rem;
+  color: #dcff00;
+}
+
+.docs-sidebar-wa small {
+  display: block;
+  font-size: 0.7rem;
+  color: #d5e8c4;
+}
+
+.docs-sidebar-wa > span {
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #dcff00;
+}
+
+/* Folha central estilo página de documento */
+
+.docs-folha-wrap {
+  padding: 1.75rem 1.5rem 5rem;
+  min-width: 0;
+}
+
+.folha {
+  max-width: 56rem;
+  margin: 0 auto;
+  background: #fbf6e4;
+  border: 1px solid #dfd7c2;
+  border-radius: 6px;
+  box-shadow: 0 20px 50px -28px rgba(16, 40, 10, 0.25);
+  padding: 2.5rem 2.25rem 4rem;
+  display: grid;
+  gap: 3.25rem;
+}
+
+.doc-capa-cabecalho {
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #e2dac3;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.doc-titulo-principal {
+  font-size: clamp(2rem, 4.5vw, 2.85rem);
+  color: #10280a;
+  line-height: 1.05;
+}
+
+.doc-subtitulo {
+  color: #3e6a52;
+  font-size: 0.96rem;
+  max-width: 42rem;
+}
+
+@media (max-width: 920px) {
+  .docs-topbar {
+    height: 3.2rem;
+    padding: 0 0.85rem;
+  }
+
+  .docs-menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.36rem 0.65rem;
+  }
+
+  .guia-sep,
+  .docs-doc-title,
+  .docs-whats-chip,
+  .carimbo-top {
+    display: none;
+  }
+
+  .mobile-quickbar {
+    position: sticky;
+    top: 3.2rem;
+    z-index: 35;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: #10280a;
+    padding: 0.35rem 0.5rem 0;
+    gap: 0.25rem;
+    border-bottom: 1px solid #dfd7c2;
+  }
+
+  .mobile-quickbar a {
+    padding: 0.58rem 0.25rem;
+    text-align: center;
+    font-family: Futura, "Avenir Next Condensed", sans-serif;
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    color: #d5e8c4;
+    background: #1a3a12;
+    border: 1px solid rgba(220, 255, 0, 0.16);
+    border-bottom: 0;
+    border-radius: 4px 4px 0 0;
+    white-space: nowrap;
+  }
+
+  .mobile-quickbar a.quick-ativo {
+    background: #fbf6e4;
+    color: #10280a;
+    border-color: #dfd7c2;
+    position: relative;
+    top: 1px;
+  }
+
+  .docs-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    top: 3.2rem;
+    z-index: 45;
+    background: rgba(16, 40, 10, 0.55);
+  }
+
+  .docs-fechar-mobile {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .docs-corpo {
+    grid-template-columns: 1fr;
+  }
+
+  .docs-sidebar {
+    position: fixed;
+    top: 3.2rem;
+    left: 0;
+    bottom: 0;
+    height: calc(100dvh - 3.2rem);
+    width: min(19rem, 84vw);
+    z-index: 50;
+    transform: translateX(-105%);
+    transition: transform 0.18s ease;
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.45);
+  }
+
+  .docs-sidebar-aberta {
+    transform: translateX(0);
+  }
+
+  .docs-folha-wrap {
+    padding: 0;
+  }
+
+  .folha {
+    padding: 1.25rem 0.95rem 3.5rem;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    gap: 2.25rem;
+  }
+
+  .painel-secao,
+  .bloco-secao,
+  .bloco-fornecedor,
+  .subbloco {
+    scroll-margin-top: 6.2rem;
+  }
+
+  .banner-fornecedor {
+    padding: 1.15rem;
+    gap: 1rem;
+  }
+
+  .banner-fornecedor-dir {
+    min-width: 0;
+    width: 100%;
+    padding: 0.9rem 1rem;
+  }
+
+  .seletor-medidas {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tamanhos-chips {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .filtros-catalogo {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .filtro-btn {
+    padding: 0.5rem 0.35rem;
+    text-align: center;
+    font-size: 0.74rem;
+  }
+
+  th,
+  td {
+    padding: 0.42rem 0.28rem;
+    font-size: 0.74rem;
+  }
+
+  th:first-child,
+  td:first-child {
+    padding-left: 0.5rem;
+  }
+
+  .acao-portal-bar .btn-lima,
+  .subbloco-header-row .btn-lima {
+    width: 100%;
+  }
+}
+
+.painel-secao,
+.bloco-secao,
+.bloco-fornecedor {
+  display: grid;
+  gap: 2.25rem;
+  scroll-margin-top: 4.6rem;
+}
+
+.secao-cabecalho {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.secao-tag {
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #145c38;
+}
+
+.secao-tag-lima {
+  color: #dcff00;
+}
+
+.secao-cabecalho h2 {
+  font-size: clamp(1.75rem, 5vw, 2.35rem);
+  color: #10280a;
+}
+
+.secao-desc {
+  color: #3e6a52;
+  max-width: 44rem;
+  font-size: 0.96rem;
+}
+
+/* Antes de comprar */
+
+.grade-antes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 0.95rem;
+}
+
+.card-antes {
+  background: #fff;
+  border: 1px solid #d5e0c8;
+  border-radius: 6px;
+  padding: 1.2rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.85rem;
+  box-shadow: 0 10px 26px -18px rgba(16, 40, 10, 0.22);
+}
+
+.card-antes-num {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 4px;
+  background: #10280a;
+  color: #dcff00;
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-weight: 800;
+  font-size: 0.84rem;
+  display: grid;
+  place-items: center;
+}
+
+.card-antes strong {
+  display: block;
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-size: 0.98rem;
+  letter-spacing: 0.04em;
+  color: #10280a;
+  margin-bottom: 0.3rem;
+}
+
+.card-antes p {
+  font-size: 0.9rem;
+  color: #26441e;
+}
+
+.quadro-tamanhos {
+  background: #10280a;
+  color: #fbf6e4;
+  border-radius: 6px;
+  padding: 1.35rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.quadro-tamanhos h3 {
+  color: #fbf6e4;
+  font-size: 1.25rem;
+  margin-top: 0.2rem;
+}
+
+.tamanhos-chips {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
+  gap: 0.65rem;
+}
+
+.tamanho-chip {
+  background: #1a3a12;
+  border: 1px solid rgba(220, 255, 0, 0.28);
+  border-radius: 4px;
+  padding: 0.75rem 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+}
+
+.chip-col {
+  display: grid;
+  gap: 0.1rem;
+}
+
+.chip-col small {
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  color: #8fb56a;
+}
+
+.chip-col span {
+  color: #fbf6e4;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.chip-col-destaque {
+  text-align: right;
+}
+
+.chip-col-destaque small {
+  color: #dcff00;
+}
+
+.tamanho-chip i {
+  font-style: normal;
+  color: #8fb56a;
+  font-size: 1.1rem;
+}
+
+.tamanho-chip strong {
+  color: #dcff00;
+  font-size: 1.25rem;
+}
+
+.tamanhos-obs {
+  font-size: 0.88rem;
+  color: #d5e8c4;
+}
+
+/* Imposto */
+
+.card-imposto {
+  background: #fff;
+  border: 1px solid #d5e0c8;
+  border-radius: 6px;
+  padding: 1.4rem;
+  display: grid;
+  gap: 1.35rem;
+  box-shadow: 0 14px 34px -22px rgba(16, 40, 10, 0.22);
+}
+
+.imposto-bloco-passos {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.imposto-passos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 0.65rem;
+}
+
+.imposto-passos li {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  align-items: start;
+  gap: 0.75rem;
+  padding: 0.85rem 0.95rem;
+  border-radius: 4px;
+  background: #f7f4ea;
+  border: 1px solid #e6e0cc;
+}
+
+.imposto-num {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 4px;
+  background: #145c38;
+  color: #dcff00;
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-weight: 800;
+  font-size: 0.84rem;
+  display: grid;
+  place-items: center;
+}
+
+.imposto-passos strong {
+  color: #145c38;
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  letter-spacing: 0.04em;
+  display: block;
+  margin-bottom: 0.15rem;
+}
+
+.alerta-cpf {
+  background: #fff3b0;
+  border: 1.5px solid #e5c94c;
+  border-radius: 6px;
+  padding: 1.25rem;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.alerta-topo {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+  gap: 0.85rem;
+  align-items: center;
+}
+
+.alerta-icone {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 4px;
+  background: #e5484d;
+  color: #fff;
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-weight: 900;
+  font-size: 1.35rem;
+  display: grid;
+  place-items: center;
+}
+
+.alerta-kicker {
+  display: block;
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  color: #9d1c1c;
+  font-weight: 800;
+}
+
+.alerta-exemplo {
+  font-size: 0.9rem;
+  padding: 0.75rem 0.9rem;
+  background: rgba(255, 255, 255, 0.78);
+  border-radius: 4px;
+}
+
+.alerta-riscos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 0.7rem;
+}
+
+.risco-item {
+  background: #fff;
+  border-left: 4px solid #e5484d;
+  border-radius: 4px;
+  padding: 0.75rem 0.85rem;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.risco-item span {
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-weight: 800;
+  font-size: 0.8rem;
+  color: #e5484d;
+  letter-spacing: 0.08em;
+}
+
+.risco-item p {
+  font-size: 0.85rem;
+}
+
+.alerta-dica {
+  background: #10280a;
+  color: #dcff00;
+  padding: 0.8rem 1rem;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.acao-portal-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #e6ede0;
+}
+
+.acao-portal-bar p {
+  font-size: 0.86rem;
+  color: #3e6a52;
+}
+
+.proximo-fornecedor-cta {
+  background: #10280a;
+  color: #fbf6e4;
+  border-radius: 6px;
+  padding: 1.35rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.proximo-fornecedor-cta span {
+  display: block;
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  color: #dcff00;
+}
+
+.proximo-fornecedor-cta strong {
+  font-size: 1.15rem;
+}
+
+.proximo-botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.btn-lima {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: #dcff00;
+  color: #10280a;
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  padding: 0.85rem 1.25rem;
+  border-radius: 4px;
+  border: 1.5px solid #10280a;
+  box-shadow: 0 8px 20px -10px rgba(16, 40, 10, 0.45);
+}
+
+.btn-secundario {
+  background: #1a3a12;
+  color: #dcff00;
+  border: 1px solid rgba(220, 255, 0, 0.45);
+}
+
+/* Fornecedor Banner */
+
+.banner-fornecedor {
+  background:
+    radial-gradient(circle at 90% 10%, rgba(220, 255, 0, 0.2), transparent 45%),
+    #10280a;
+  color: #fbf6e4;
+  border-radius: 6px;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1.5rem;
+  align-items: center;
+  box-shadow: 0 20px 44px -24px rgba(16, 40, 10, 0.55);
+}
+
+@media (max-width: 780px) {
+  .banner-fornecedor {
+    grid-template-columns: 1fr;
+  }
+}
+
+.banner-fornecedor-esq {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.banner-fornecedor-topo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.fornecedor-num {
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-size: 0.74rem;
+  letter-spacing: 0.16em;
+  color: #dcff00;
+  font-weight: 800;
+}
+
+.fornecedor-pag {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+  background: rgba(220, 255, 0, 0.14);
+  color: #dcff00;
+  font-weight: 700;
+}
+
+.banner-fornecedor h2 {
+  font-size: clamp(1.9rem, 5vw, 2.65rem);
+  color: #fbf6e4;
+}
+
+.fornecedor-resumo {
+  color: #d5e8c4;
+  font-size: 0.96rem;
+}
+
+.atalhos-internos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  padding-top: 0.35rem;
+}
+
+.atalhos-internos span {
+  font-size: 0.76rem;
+  color: #8fb56a;
+  margin-right: 0.2rem;
+}
+
+.atalhos-internos a {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #fbf6e4;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(220, 255, 0, 0.22);
+  padding: 0.32rem 0.68rem;
+  border-radius: 4px;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.atalhos-internos a:hover {
+  background: rgba(220, 255, 0, 0.18);
+  border-color: #dcff00;
+}
+
+.banner-fornecedor-dir {
+  background: #1a3a12;
+  border: 1px solid rgba(220, 255, 0, 0.3);
+  border-radius: 6px;
+  padding: 1.1rem 1.25rem;
+  display: grid;
+  gap: 0.45rem;
+  min-width: 16.5rem;
+}
+
+.whats-label {
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  color: #dcff00;
+  font-weight: 800;
+}
+
+.whats-num {
+  font-size: 1.1rem;
+  color: #fbf6e4;
+  letter-spacing: 0.02em;
+}
+
+.btn-whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+  padding: 0.8rem 1.1rem;
+  border-radius: 4px;
+  background: #dcff00;
+  color: #10280a;
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-weight: 900;
+  font-size: 0.88rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.btn-whatsapp i {
+  font-style: normal;
+  font-size: 1rem;
+}
+
+/* Subblocos e Etapas */
+
+.subbloco {
+  display: grid;
+  gap: 1.1rem;
+  scroll-margin-top: 4.6rem;
+}
+
+.subbloco-header-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.subbloco-topo {
+  display: grid;
+  gap: 0.3rem;
+}
+
+.etapa-pill {
+  width: fit-content;
+  padding: 0.24rem 0.65rem;
+  border-radius: 4px;
+  background: #10280a;
+  color: #dcff00;
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.subbloco-topo h3 {
+  font-size: 1.5rem;
+  color: #10280a;
+}
+
+.subbloco-desc {
+  color: #3e6a52;
+  font-size: 0.92rem;
+  max-width: 42rem;
+}
+
+.subbloco-intro {
+  background: #fff3b0;
+  border-left: 4px solid #145c38;
+  padding: 0.9rem 1.05rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #10280a;
+}
+
+/* Filtros de catálogo do Cris */
+
+.filtros-catalogo {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  background: #ebe4cc;
+  padding: 0.3rem;
+  border-radius: 6px;
+}
+
+.filtro-btn {
+  padding: 0.5rem 0.9rem;
+  border-radius: 4px;
+  background: transparent;
+  color: #26441e;
+  font-size: 0.78rem;
+  box-shadow: none;
+}
+
+.filtro-btn:hover {
+  transform: none;
+  box-shadow: none;
+  background: rgba(16, 40, 10, 0.08);
+}
+
+.filtro-btn-ativo {
+  background: #10280a;
+  color: #dcff00;
+}
+
+.filtro-btn-ativo:hover {
+  background: #10280a;
+}
+
+/* Seletor de medidas por aba */
+
+.seletor-medidas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10.5rem, 1fr));
+  gap: 0.55rem;
+}
+
+.medida-tab {
+  background: #fff;
+  border: 1.5px solid #d5e0c8;
+  border-radius: 4px;
+  padding: 0.75rem 0.9rem;
+  text-align: left;
+  display: grid;
+  gap: 0.15rem;
+  color: #10280a;
+  box-shadow: none;
+}
+
+.medida-tab strong {
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-size: 0.95rem;
+}
+
+.medida-tab small {
+  font-family: "Avenir Next", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #3e6a52;
+}
+
+.medida-tab-ativa {
+  background: #10280a;
+  border-color: #10280a;
+  color: #dcff00;
+}
+
+.medida-tab-ativa small {
+  color: #d5e8c4;
+}
+
+.grade-tabelas {
+  display: grid;
+  gap: 1rem;
+}
+
+.card-tabela {
+  background: #fff;
+  border: 1.5px solid #10280a;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px -18px rgba(16, 40, 10, 0.25);
+}
+
+.card-tabela-oculta {
+  display: none;
+}
+
+.card-tabela-head {
+  padding: 1rem 1.15rem;
+  background: #f7f4ea;
+  border-bottom: 1px solid #d5e0c8;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.65rem;
+}
+
+.card-tabela-head h3 {
+  font-size: 1.1rem;
+  color: #10280a;
+}
+
+.card-tabela-head p {
+  font-size: 0.84rem;
+  color: #3e6a52;
+}
+
+.tabela-dica-badge {
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 0.3rem 0.65rem;
+  border-radius: 4px;
+  background: #dcff00;
+  color: #10280a;
+}
+
+.tabela-scroll {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.86rem;
+}
+
+th,
+td {
+  border-bottom: 1px solid #e6ede0;
+  padding: 0.6rem 0.7rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+th:first-child,
+td:first-child {
+  text-align: left;
+  padding-left: 1.1rem;
+  font-weight: 800;
+}
+
+th {
+  background: #10280a;
+  color: #dcff00;
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+}
+
+.cel-codigo {
+  color: #145c38;
+  background: rgba(220, 255, 0, 0.18);
+}
+
+tbody tr:nth-child(even) {
+  background: #faf8f0;
+}
+
+/* Catálogos (SpotlightCard) */
+
+.grade-catalogos-preco {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1rem;
+}
+
+.grade-catalogos-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15.5rem, 1fr));
+  gap: 0.8rem;
+}
+
+.cartao-catalogo.spotlight-card {
+  padding: 1.25rem;
+  border-radius: 6px;
+  border: 1px solid #d5e0c8;
+}
+
+.catalogo-miolo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  height: 100%;
+}
+
+.catalogo-cabecalho {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.catalogo-indice {
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 4px;
+  background: #10280a;
+  color: #dcff00;
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-weight: 800;
+  font-size: 0.82rem;
+  display: grid;
+  place-items: center;
+}
+
+.catalogo-cabecalho h3 {
+  font-size: 1.15rem;
+  color: #10280a;
+}
+
+.catalogo-cabecalho p {
+  font-size: 0.84rem;
+  color: #3e6a52;
+  margin-top: 0.2rem;
+}
+
+.lista-precos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.42rem;
+}
+
+.lista-precos li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.44rem 0;
+  border-bottom: 1px dashed #d5e0c8;
+  font-size: 0.9rem;
+}
+
+.lista-precos li:last-child {
+  border-bottom: 0;
+}
+
+.lista-precos strong {
+  color: #145c38;
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-size: 0.98rem;
+  white-space: nowrap;
+}
+
+.btn-catalogo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  background: #10280a;
+  color: #dcff00;
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-weight: 800;
+  font-size: 0.84rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: background 0.15s ease, transform 0.12s ease;
+}
+
+.btn-catalogo:hover {
+  background: #145c38;
+  transform: translateY(-1px);
+}
+
+.btn-catalogo i {
+  font-style: normal;
+  font-size: 1rem;
+}
+
+/* Condições: Frete / Adicionais / Pagamento */
+
+.grade-condicoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1rem;
+}
+
+.card-condicao {
+  background: #fff;
+  border: 1px solid #d5e0c8;
+  border-radius: 6px;
+  padding: 1.25rem;
+  display: grid;
+  align-content: start;
+  gap: 0.7rem;
+}
+
+.card-condicao-escura {
+  background: #10280a;
+  border-color: #10280a;
+  color: #fbf6e4;
+}
+
+.pagamento-linha {
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: #dcff00;
+}
+
+.pagamento-aviso {
+  font-size: 0.85rem;
+  color: #d5e8c4;
+}
+
+/* Passo a passo */
+
+.lista-passos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16.5rem, 1fr));
+  gap: 1rem;
+}
+
+.card-passo {
+  background: #fff;
+  border: 1px solid #d5e0c8;
+  border-radius: 6px;
+  padding: 1.25rem;
+  display: grid;
+  align-content: start;
+  gap: 0.7rem;
+}
+
+.passo-topo {
+  display: grid;
+  gap: 0.3rem;
+}
+
+.passo-badge {
+  width: fit-content;
+  padding: 0.22rem 0.6rem;
+  border-radius: 4px;
+  background: #dcff00;
+  color: #10280a;
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-weight: 800;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+}
+
+.passo-topo strong {
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-size: 1.2rem;
+  color: #10280a;
+}
+
+.passo-texto {
+  font-size: 0.9rem;
+  color: #26441e;
+}
+
+.passo-sublista {
+  margin: 0;
+  padding-left: 1.15rem;
+  display: grid;
+  gap: 0.32rem;
+  font-size: 0.88rem;
+}
+
+.passo-exemplo {
+  background: #f7f4ea;
+  border-radius: 4px;
+  padding: 0.8rem;
+  display: grid;
+  gap: 0.38rem;
+}
+
+.passo-exemplo span {
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  color: #145c38;
+  font-weight: 800;
+}
+
+.passo-nota {
+  background: #fff3b0;
+  border-left: 3px solid #145c38;
+  padding: 0.65rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.84rem;
+}
+
+/* Mensagens prontas */
+
+.grade-mensagens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1rem;
+}
+
+.cartao-mensagem {
+  background: #fff3b0;
+  border: 1.5px solid #e2cf72;
+  border-radius: 6px;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.9rem;
+  box-shadow: 0 12px 28px -18px rgba(16, 40, 10, 0.25);
+}
+
+.cartao-mensagem-miolo {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.cartao-mensagem-topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.mensagem-tag {
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  padding: 0.22rem 0.58rem;
+  border-radius: 4px;
+  background: #10280a;
+  color: #dcff00;
+}
+
+.cartao-mensagem h3 {
+  font-size: 1.05rem;
+  color: #10280a;
+}
+
+.mensagem-dica {
+  font-size: 0.86rem;
+  color: #26441e;
+}
+
+pre {
+  margin: 0;
+  white-space: pre-wrap;
+  background: #fff;
+  border: 1px solid #e2dcc5;
+  border-left: 5px solid #145c38;
+  border-radius: 4px;
+  padding: 0.9rem 1rem;
+  font-family: "SF Mono", "Menlo", "Consolas", monospace;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: #10280a;
+}
+
+.copiar {
+  width: 100%;
+  background: #10280a;
+  color: #dcff00;
+}
+
+.copiar-ok {
+  background: #145c38;
+  color: #fbf6e4;
+}
+
+/* Checklist interativo */
+
+.card-checklist {
+  background: #10280a;
+  color: #fbf6e4;
+  border-radius: 6px;
+  padding: 1.45rem;
+}
+
+.checklist-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.card-checklist h3 {
+  color: #fbf6e4;
+}
+
+.checklist-sub {
+  font-size: 0.88rem;
+  color: #b8d3a3;
+}
+
+.checklist-placar {
+  background: #1a3a12;
+  border: 1px solid rgba(220, 255, 0, 0.35);
+  border-radius: 4px;
+  padding: 0.6rem 1rem;
+  text-align: center;
+  min-width: 6.5rem;
+}
+
+.checklist-placar strong {
+  display: block;
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-size: 1.4rem;
+  color: #dcff00;
+  line-height: 1;
+}
+
+.checklist-placar span {
+  font-size: 0.72rem;
+  color: #d5e8c4;
+}
+
+.lista-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
+  gap: 0.65rem;
+}
+
+.check-item-btn {
+  width: 100%;
+  border-radius: 4px;
+  padding: 0.8rem 0.95rem;
+  background: #1a3a12;
+  border: 1px solid rgba(220, 255, 0, 0.2);
+  color: #fbf6e4;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: left;
+  font-family: "Avenir Next", sans-serif;
+  font-weight: 600;
+  font-size: 0.88rem;
+  box-shadow: none;
+}
+
+.check-item-btn:hover {
+  background: #214817;
+  border-color: rgba(220, 255, 0, 0.5);
+  transform: none;
+  box-shadow: none;
+}
+
+.check-box {
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 3px;
+  background: rgba(220, 255, 0, 0.14);
+  color: #dcff00;
+  font-family: Futura, "Avenir Next Condensed", sans-serif;
+  font-weight: 900;
+  font-size: 0.78rem;
+  display: grid;
+  place-items: center;
+}
+
+.check-item-feito {
+  background: rgba(220, 255, 0, 0.14);
+  border-color: #dcff00;
+}
+
+.check-item-feito .check-box {
+  background: #dcff00;
+  color: #10280a;
+}
+
+.check-item-feito .check-texto {
+  text-decoration: line-through;
+  color: #b8d3a3;
+}

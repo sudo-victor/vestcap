@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "node --import tsx --test lib/acesso.test.ts lib/sessao.test.ts lib/cena.test.ts lib/entrada.test.tsx"
+  },
+  "dependencies": {
+    "motion": "^12.43.0",
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "server-only": "0.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.3",
+    "@types/react": "19.1.2",
+    "@types/react-dom": "19.1.2",
+    "tsx": "4.20.3",
+    "typescript": "5.8.3"
+  }
+}
